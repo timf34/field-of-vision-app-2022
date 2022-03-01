@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'first_page.dart';
+import 'splash_screen.dart';
 
 
 void main() async {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext ctxt) {
     return const MaterialApp(
-      home: FirstPage(),
+      home: SplashScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'second_page.dart';
 
+
 class FirstPage extends StatelessWidget {
   const FirstPage({Key? key}) : super(key: key);
 
@@ -88,7 +89,7 @@ class FirstPage extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => SecondPage()),
+                  MaterialPageRoute(builder: (context) => const SecondPage()),
                 );
               },
             ),

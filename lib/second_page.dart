@@ -10,7 +10,6 @@ class SecondPage extends StatelessWidget {
 
   // This adds two buttons to the page in a column
   Widget build(BuildContext context) {
-      var mainAxisSize;
       // ignore: dead_code
       return MaterialApp(
         title: 'Welcome to Flutter',
@@ -31,6 +30,11 @@ class SecondPage extends StatelessWidget {
                     );
                   },
                   child: const Text('Devices/ bluetooth page'),
+                  style: TextButton.styleFrom(
+                    textStyle: const TextStyle(fontSize: 20),
+                    primary: Colors.white, // This sets the colour of the font
+                    backgroundColor: Colors.blue, // This sets the colour of the button background
+                  ),
                 ),
                 TextButton(
                   onPressed: () {
@@ -40,6 +44,11 @@ class SecondPage extends StatelessWidget {
                     );
                   },
                   child: const Text('Matches page (goes to Bluetooth page for now)'),
+                  style: TextButton.styleFrom(
+                    textStyle: const TextStyle(fontSize: 20),
+                    primary: Colors.white, // This sets the colour of the font
+                    backgroundColor: Colors.blue, // This sets the colour of the button background
+                  ),
                 ),
               ],
             ),

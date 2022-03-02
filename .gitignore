@@ -45,3 +45,7 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
+# In case anyone is building on Windows/ web apps too locally 
+/windows/ 
+/web/ 
+

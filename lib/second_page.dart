@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import "device_bluetooth.dart";
+import "match_selection.dart";
 
 class SecondPage extends StatelessWidget {
   const SecondPage({Key? key}) : super(key: key);
@@ -40,7 +41,7 @@ class SecondPage extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const BluetoothDevice()),
+                      MaterialPageRoute(builder: (context) => const MatchSelection()),
                     );
                   },
                   child: const Text('Matches page (goes to Bluetooth page for now)'),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class BluetoothDevice extends StatelessWidget {
-  const BluetoothDevice({Key? key}) : super(key: key);
+class MatchSelection extends StatelessWidget {
+  const MatchSelection({Key? key}) : super(key: key);
 
   @override
 

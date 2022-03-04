@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'second_page.dart';
 
+/*
+  This is just a 'get started' hompage
+ */
+
 
 class FirstPage extends StatelessWidget {
   const FirstPage({Key? key}) : super(key: key);

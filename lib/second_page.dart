@@ -27,7 +27,7 @@ class SecondPage extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const BluetoothDevice()),
+                      MaterialPageRoute(builder: (context) => const BluetoothPage()),
                     );
                   },
                   child: const Text('Devices/ bluetooth page'),

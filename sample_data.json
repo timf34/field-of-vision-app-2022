@@ -1,0 +1,37 @@
+{
+  "Topic": "ESP32/tester",
+  "Audio": "test.mp3",
+  "Matches":
+  [
+    {
+      "MatchInfo":
+      {
+        "HomeTeam": "Man-City",
+        "AwayTeam": "Barca",
+        "Date" : "01012022",
+        "Score" : "2-1"
+      },
+      "MatchData":
+      {
+        "timestamp" : 1,
+        "x": 100,
+        "y": 200
+      }
+    },
+    {
+      "MatchInfo":
+      {
+        "HomeTeam": "Bohs",
+        "AwayTeam": "Liverpool",
+        "Date" : "02012022",
+        "Score" : "2-1"
+      },
+      "MatchData":
+      {
+        "timestamp" : 1,
+        "x": 150,
+        "y": 200
+      }
+    }
+  ]
+}

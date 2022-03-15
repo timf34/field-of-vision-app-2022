@@ -1,3 +1,16 @@
+# Updated notes 
+### Using laptop bluetooth serial communication
+Our app can communicate via Bluetooth serial with our laptops over Putty. 
+
+Simply connect to your laptop through the app (for now, it already has to have been paired before),
+then open a putty serial terminal. Open your device manager and look for the `Ports (COM & LPT)` 
+tab, expand that. You should see different ports to connect to your laptop over Bluetooth, for 
+example, `Standard Serial over Bluetooth link (COM19)`. When setting up your Putty terminal,
+select one of these COM ports for a serial connection, try multiple in case the first doesn't work. 
+You should now be good to go once you connect to your laptop through the app:)
+
+
+
 # fov_app
 
 A new Flutter project.

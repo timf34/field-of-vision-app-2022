@@ -3,9 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'second_page.dart';
 
 /*
-  This is just a 'get started' hompage
+  This is just a 'get started' homepage
  */
-
 
 class FirstPage extends StatelessWidget {
   const FirstPage({Key? key}) : super(key: key);

@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import "device_bluetooth.dart";
 import "match_selection.dart";
 
+import "discovery_page.dart";
+
 class SecondPage extends StatelessWidget {
   const SecondPage({Key? key}) : super(key: key);
 
@@ -27,7 +29,7 @@ class SecondPage extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const BluetoothPage()),
+                      MaterialPageRoute(builder: (context) => const DiscoveryPage()),
                     );
                   },
                   child: const Text('Devices/ bluetooth page'),

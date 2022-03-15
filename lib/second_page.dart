@@ -4,6 +4,7 @@ import "device_bluetooth.dart";
 import "match_selection.dart";
 
 import "discovery_page.dart";
+import "select_bonded_device_page.dart";
 
 class SecondPage extends StatelessWidget {
   const SecondPage({Key? key}) : super(key: key);
@@ -29,10 +30,24 @@ class SecondPage extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
+                      MaterialPageRoute(builder: (context) => const SelectBondedDevicePage(checkAvailability: false))
+                    );
+                  },
+                  child: const Text('Connect to paired bluetooth devices'),
+                  style: TextButton.styleFrom(
+                    textStyle: const TextStyle(fontSize: 20),
+                    primary: Colors.white, // This sets the colour of the font
+                    backgroundColor: Colors.blue, // This sets the colour of the button background
+                  ),
+                ),
+                TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
                       MaterialPageRoute(builder: (context) => const DiscoveryPage()),
                     );
                   },
-                  child: const Text('Devices/ bluetooth page'),
+                  child: const Text('Bluetooth Serial Communication'),
                   style: TextButton.styleFrom(
                     textStyle: const TextStyle(fontSize: 20),
                     primary: Colors.white, // This sets the colour of the font

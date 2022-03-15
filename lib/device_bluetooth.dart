@@ -4,7 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 /*
-  This page will search for and list the available devices for now. Might change
+  For now, this page is not being used and we are just copying over the pages
+  from the other different bluetooth apps.
+  This page does show how to ask for the bluetooth permission in its simplest
+  form though!
+
+  This page might search for and list the available devices for now. Might change
   up the structure to allow for debugging the communication (ie explictly add
   a serial terminal, but in another page)
  */

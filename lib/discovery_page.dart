@@ -5,6 +5,14 @@ import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
 
 import './bluetooth_device_list_entry.dart';
 
+/*
+  Note that this page is solely for the purpose of scanning for potential
+  Bluetooth devices
+  IT DOES NOT CONNECT WITH SAID DEVICES!
+ */
+
+
+
 class DiscoveryPage extends StatefulWidget {
   /// If true, discovery starts on page start, otherwise user must press action button.
   final bool start;

@@ -92,4 +92,19 @@ flutter:
     - images/fov_text_transparent.png
     - images/fov_text_transparent.svg
     - images/tablet_transparent.png
-
+    - images/Football_field.jpg # These are the images for Dylan's frontend
+    - images/field.jpg
+    - images/fov_appbar.png
+    - images/round_icon.jpg
+    - images/football_play.jpg
+    - images/device.jpg
+    - images/united_chelsea.jpg
+    - images/uvc.jpg
+    - images/cvw.jpg
+    - images/evav.jpg
+    - images/avs.jpg
+    - images/lvl.jpg
+    - images/nwvl.jpg
+    - images/wbvso.jpg
+    - images/wovwa.jpg
+    - images/field_top.jpg

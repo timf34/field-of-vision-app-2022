@@ -1,9 +1,8 @@
 # Updated notes 
-### For integrating Dylan's code. 
-Simply replace all the frontend code that **doesn't** include bluetooth relevant stuff, with 
-Dylan's stuff. Get the app up and running and it should be pretty apparent what needs replacing. 
-That would be primarily the second_page for selection, which needs to be updated + the currently
-empty match page link.
+### TODO 
+[] Not sure if the current code, where I quickly integrated Dylan's code, asks for bluetooth 
+permissions. Thankfully the app has them by default on my phone currently anyways, but will need to 
+check this out. 
 
 
 

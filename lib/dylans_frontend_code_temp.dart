@@ -1,4 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
+
+import "select_bonded_device_page.dart";
+import "chat_page.dart";
 
 /*
   This is a temp file for holding Dylan's frontend design code before its
@@ -149,19 +154,30 @@ class SecondRoute extends StatelessWidget {
               top: 575,
               left: 85,
               child: ElevatedButton(
+                child: const Text("Connect + serial communication (debugging)"),
                 style: ElevatedButton.styleFrom(
                   padding: EdgeInsets.symmetric(horizontal: 32, vertical: 16),
                   textStyle: TextStyle(fontSize: 20),
                   primary: Color.fromARGB(255, 22, 216, 223),
                 ),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const Thirdroute()),
+                onPressed: () async {
+                  final BluetoothDevice? selectedDevice =
+                  await Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return SelectBondedDevicePage(checkAvailability: false);
+                      },
+                    ),
                   );
+
+                  if (selectedDevice != null) {
+                    print('Connect -> selected ' + selectedDevice.address);
+                    _startChat(context, selectedDevice);
+                  } else {
+                    print('Connect -> no device selected');
+                  }
                 },
-                child: Text('Bluetooth Devices'),
-              ), //CircularAvatar
+              ),
             ), //Positioned
 
             Positioned(
@@ -314,4 +330,14 @@ class Thirdroute extends StatelessWidget {
       ),
     );
   }
+}
+
+void _startChat(BuildContext context, BluetoothDevice server) {
+  Navigator.of(context).push(
+    MaterialPageRoute(
+      builder: (context) {
+        return ChatPage(server: server);
+      },
+    ),
+  );
 }

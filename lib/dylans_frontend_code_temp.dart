@@ -155,7 +155,10 @@ class SecondRoute extends StatelessWidget {
                   primary: Color.fromARGB(255, 22, 216, 223),
                 ),
                 onPressed: () {
-                  Navigator.pop(context);
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Thirdroute()),
+                  );
                 },
                 child: Text('Bluetooth Devices'),
               ), //CircularAvatar

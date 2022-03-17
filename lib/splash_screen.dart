@@ -2,6 +2,12 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import 'first_page.dart';
+import "dylans_frontend_code_temp.dart";
+
+/*
+  Note that I have temporarily just set this page to link to Dylan's frontend
+  code. This will need to be properly integrated in due time.
+ */
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -18,7 +24,8 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(
         const Duration(seconds: 2),
         () => Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => const FirstPage())));
+          // This is all that's is changed, FirstPage to FirstRoute
+            context, MaterialPageRoute(builder: (context) => const FirstRoute())));
   }
 
   @override

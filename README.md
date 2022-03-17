@@ -16,6 +16,8 @@ example, `Standard Serial over Bluetooth link (COM19)`. When setting up your Put
 select one of these COM ports for a serial connection, try multiple in case the first doesn't work. 
 You should now be good to go once you connect to your laptop through the app:)
 
+**Note that you need to have a Putty serial terminal open already before you can connect!**
+
 
 
 # fov_app

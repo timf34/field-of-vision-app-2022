@@ -1,4 +1,12 @@
 # Updated notes 
+### For integrating Dylan's code. 
+Simply replace all the frontend code that **doesn't** include bluetooth relevant stuff, with 
+Dylan's stuff. Get the app up and running and it should be pretty apparent what needs replacing. 
+That would be primarily the second_page for selection, which needs to be updated + the currently
+empty match page link.
+
+
+
 ### Using laptop bluetooth serial communication
 Our app can communicate via Bluetooth serial with our laptops over Putty. 
 
